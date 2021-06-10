@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>AJ Journals</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html">
+                <img src="images/logo3.jpg" height="50px" width="50px" alt="not-found"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-window-close"  onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Journals</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()" ></i>
+        </nav>
+<div class="text-box">
+    <h1>AJ Journals</h1>
+    <p>We are here to Publish your Papers in our beloved Journal of any Specialization</p>
+    <a bref="" class="hero-btn">Visit To know more</a>
+</div>
+    </section>
+
+
+
+
+-----------------JavaScript for toggle Menu for Small Screen Like Mobile use
+    <script>
+        var navlinks=document.getElementById("navlinks")
+        function showmenu(){
+            navlinks.style.right="0"
+        }
+        function hidemenu(){
+            navlinks.style.right="-200px"
+        }
+    </script>
+</body>
+</html>
